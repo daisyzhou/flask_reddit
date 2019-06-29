@@ -12,7 +12,6 @@ from pprint import pprint
 from flask import *
 from werkzeug import check_password_hash, generate_password_hash
 
-sys.path.insert(0, '/home/lucas/www/reddit.lucasou.com/reddit-env/flask_reddit')
 from flask_reddit import *
 from flask_reddit.users.models import *
 from flask_reddit.threads.models import *
@@ -21,14 +20,17 @@ from flask_reddit.subreddits.models import *
 db.drop_all()
 db.create_all()
 
-first_user = User(username='root', email='your_email@gmail.com', \
-        password=generate_password_hash('347895237408927419471483204721'))
+first_user = User(username='root', email='daisy.zdx@gmail.com', \
+        password=generate_password_hash('Yh9lfd0y8Byt'))
 
-#db.session.add(first_user)
+db.session.add(first_user)
 db.session.commit()
 
 first_subreddit = Subreddit(name='frontpage', desc='Welcome to Reddit! Here is our homepage.',
         admin_id=first_user.id)
 
+clancycoin_subreddit = Subreddit(name='clancycoin', desc='ClancyCoin, the hottest new cryptocurrency!', admin_id=first_user.id)
+
 db.session.add(first_subreddit)
+db.session.add(clancycoin_subreddit)
 db.session.commit()
