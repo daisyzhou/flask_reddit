@@ -20,7 +20,7 @@ CSRF_SESSION_KEY = ""
 
 BRAND = "reddit"
 DOMAIN = "YOUR_DOMAIN_HERE"
-ROOT_URL = "http://clancycoin.herokuapp.com"
+ROOT_URL = "https://clancycoin.herokuapp.com"
 
 STATIC_ROOT = "/path/to/your/static/root/"
 STATIC_URL = ROOT_URL + "/static/"
