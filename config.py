@@ -22,5 +22,5 @@ BRAND = "reddit"
 DOMAIN = "YOUR_DOMAIN_HERE"
 ROOT_URL = "https://clancycoin.herokuapp.com"
 
-STATIC_ROOT = "/path/to/your/static/root/"
+STATIC_ROOT = "{}/flask_reddit".format(_basedir)
 STATIC_URL = ROOT_URL + "/static/"
