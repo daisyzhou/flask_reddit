@@ -24,3 +24,4 @@ ROOT_URL = "https://clancycoin.herokuapp.com"
 
 STATIC_ROOT = "{}/flask_reddit".format(_basedir)
 STATIC_URL = ROOT_URL + "/static/"
+PROPAGATE_EXCEPTIONS = True
