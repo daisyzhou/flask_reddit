@@ -96,11 +96,6 @@
                 <button class="btn btn-primary submit-post-button">submit post</button></a>
         {% endif %} 
         </div>
-        <div class="row">
-            <a href="{{ url_for('subreddits.submit') }}">
-                <button type="button" class="btn btn-primary 
-            inverse-white-button add-subreddit-button">create community +</button></a>
-    </div>
 
     {% if cur_subreddit is defined %}
     <p class="subreddit-desc">
