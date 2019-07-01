@@ -17,7 +17,7 @@ from flask_reddit.users.models import *
 from flask_reddit.threads.models import *
 from flask_reddit.subreddits.models import *
 
-first_subreddit = Subreddit.query.filter_by(name='default').first()
+first_subreddit = Subreddit.query.filter_by(name='frontpage').first()
 
 db.session.delete(first_subreddit)
 db.session.commit()
