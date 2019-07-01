@@ -10,7 +10,7 @@ _basedir = os.path.abspath(os.path.dirname(__file__))
 DEBUG = False
 
 ADMINS = frozenset(['your_email_here@email.com'])
-SECRET_KEY = ''
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
 DATABASE_CONNECT_OPTIONS = {}
