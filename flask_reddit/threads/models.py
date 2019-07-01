@@ -62,6 +62,9 @@ class Thread(db.Model):
     votes = db.Column(db.Integer, default=1)
     hotness = db.Column(db.Float(15,6), default=0.00)
 
+    def validate_link(form, field):
+        field.data = unicode(field.data)
+
     def __init__(self, title, text, link, user_id, subreddit_id):
         self.title = title
         self.text = text
