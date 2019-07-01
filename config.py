@@ -18,7 +18,7 @@ DATABASE_CONNECT_OPTIONS = {}
 CSRF_ENABLED = True
 CSRF_SESSION_KEY = ""
 
-BRAND = "reddit"
+BRAND = "/r/CLANCYCOIN"
 DOMAIN = "YOUR_DOMAIN_HERE"
 ROOT_URL = "https://clancycoin.herokuapp.com"
 

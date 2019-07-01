@@ -42,15 +42,8 @@
           <ul class="nav navbar-nav">
               <li>
                   <a class="brand-nav" href="/">
-                      {% if cur_subreddit is defined and cur_subreddit.id != 1 %}
-                          {{ cur_subreddit.name }}
-                      {% else %} 
-                          {{ config.BRAND }}
-                      {% endif %}
+                      {{ config.BRAND }}
                   </a>
-              </li>
-              <li>
-                  <a href="/?trending=true">trending</a>
               </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
