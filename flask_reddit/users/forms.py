@@ -4,7 +4,6 @@ Logic handling user specific input forms such as logins and registration.
 """
 from flask_wtf import FlaskForm
 from wtforms import TextField, PasswordField, BooleanField
-from flask_wtf.recaptcha import RecaptchaField
 from wtforms.validators import Required, EqualTo, Email
 
 
@@ -22,4 +21,3 @@ class RegisterForm(FlaskForm):
         EqualTo('password', message='Passwords must match')
     ])
     accept_tos = BooleanField('I accept the Terms of Service.', [Required()])
-    recaptcha = RecaptchaField()
