@@ -26,11 +26,7 @@ first_user = User(username='root', email='daisy.zdx@gmail.com', \
 db.session.add(first_user)
 db.session.commit()
 
-first_subreddit = Subreddit(name='frontpage', desc='Welcome to Reddit! Here is our homepage.',
-        admin_id=first_user.id)
-
 clancycoin_subreddit = Subreddit(name='clancycoin', desc='ClancyCoin, the hottest new cryptocurrency!', admin_id=first_user.id)
 
-db.session.add(first_subreddit)
 db.session.add(clancycoin_subreddit)
 db.session.commit()
