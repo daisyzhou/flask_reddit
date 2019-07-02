@@ -147,6 +147,7 @@ div.spacer {
 }
 
 .thread-text {
+    white-space: pre-line;
     margin: 0 0 0 -30px;
 }
 
