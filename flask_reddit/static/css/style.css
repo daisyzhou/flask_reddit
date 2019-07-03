@@ -4,7 +4,8 @@
  */
 
 body {
-
+	background-image: "/static/imgs/tomclancy.jpeg";
+	background-repeat: repeat;
 }
 
 .well {
@@ -118,6 +119,7 @@ div.spacer {
 .main-box {
     margin-top: 20px;
     min-height: 700px;
+    background-color: white;
 }
 
 .the-404-image {
