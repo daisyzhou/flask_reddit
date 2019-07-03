@@ -20,7 +20,7 @@ CSRF_SESSION_KEY = ""
 
 BRAND = "/r/CLANCYCOIN"
 DOMAIN = "YOUR_DOMAIN_HERE"
-ROOT_URL = "http://reddit.clancycoin..com"
+ROOT_URL = "http://reddit.clancycoin.com"
 
 STATIC_ROOT = "{}/flask_reddit".format(_basedir)
 STATIC_URL = ROOT_URL + "/static/"
