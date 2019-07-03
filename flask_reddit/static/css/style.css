@@ -4,7 +4,7 @@
  */
 
 body {
-	background-image: "/static/imgs/tomclancy.jpeg";
+	background-image: url("/static/imgs/tomclancy.jpeg");
 	background-repeat: repeat;
 }
 
